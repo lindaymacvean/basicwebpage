@@ -1,34 +1,47 @@
+<!DOCTYPE HTML>
 <html>
+  <head>
+      <meta charset="utf-8">
+      <title>Basic Webpage</title>
+      
+      <style>
+          body{ 
+            background:     yellow;
+          }
+          
+          h1 {
+            font-size:      40px;
+            color:          red;
+          }
+          
+          .container {
+            margin-top:     5em;
+            margin-left:    auto;
+            margin-right:   auto;
+            text-align:     center;
+          }
+      </style>
+  </head>
 
-<head>
-	<style type="text/css">
-		body{ background:yellow; }
-		h1 {font-size:40px; color:red;}
-	</style>
-	<script type="text/javascript">
-		alert('this is sound of the poooolice');
-	</script>
-</head>
-
-<body>
-	
-	<audio id="sound1" autostart="false" hidden="true" enablejavascript="true" allowscriptaccess="always">
-		<source src="siren.mp3" type="audio/mpeg">
-		Your browser does not support the audio tag.
-	</audio>
-	
-	<div style="text-align:center;margin-top:5em;">
-		<h1>This is my new webpage</h1>
-		<img src="test.jpg" width="200px" />
-		<a href="http://google.com" > 
-			This is a link to google
-		</a>
-	<div style="text-align:center;margin-top:5em;">
-
-</body>
-
-<script type="text/javascript">
-	document.getElementById('sound1').play();
-</script>
-
+  <body>
+      <audio id="sound1" hidden="true" enablejavascript="true" allowscriptaccess="always">
+          <source src="siren.mp3" type="audio/mpeg">
+          Your browser does not support the audio tag.
+      </audio>
+    
+    <div class="container">
+        <h1>This is my new webpage</h1>
+        
+        <img src="test.jpg" width="200px">
+        
+        <a href="http://google.com" > 
+            This is a link to google
+        </a>
+    </div>
+    
+    <script>
+      alert('this is sound of the poooolice');
+      document.getElementById('sound1').play();
+    </script>
+  </body>
 </html>
