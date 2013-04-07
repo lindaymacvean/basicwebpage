@@ -1,35 +1,32 @@
 <!DOCTYPE HTML>
 <html>
+  <head>
+      <style>
+          body{ background:yellow; }
+          h1 {font-size:40px; color:red;}
+      </style>
+  </head>
 
-<head>
-	<style type="text/css">
-		body{ background:yellow; }
-		h1 {font-size:40px; color:red;}
-	</style>
-	<script type="text/javascript">
-		alert('this is sound of the poooolice');
-	</script>
-</head>
+  <body>
+      <audio id="sound1" autostart="false" hidden="true" enablejavascript="true" allowscriptaccess="always">
+          <source src="siren.mp3" type="audio/mpeg">
+          Your browser does not support the audio tag.
+    </audio>
+    
+    <div style="text-align:center;margin-top:5em;">
+        <h1>This is my new webpage</h1>
+        
+        <img src="test.jpg" width="200px">
+        
+        <a href="http://google.com" > 
+            This is a link to google
+        </a>
+    </div>
+  </body>
 
-<body>
-	
-	<audio id="sound1" autostart="false" hidden="true" enablejavascript="true" allowscriptaccess="always">
-		<source src="siren.mp3" type="audio/mpeg">
-		Your browser does not support the audio tag.
-	</audio>
-	
-	<div style="text-align:center;margin-top:5em;">
-		<h1>This is my new webpage</h1>
-		<img src="test.jpg" width="200px" />
-		<a href="http://google.com" > 
-			This is a link to google
-		</a>
-	<div style="text-align:center;margin-top:5em;">
-
-</body>
-
-<script>
-	document.getElementById('sound1').play();
-</script>
+  <script>
+    alert('this is sound of the poooolice');
+    document.getElementById('sound1').play();
+  </script>
 
 </html>
