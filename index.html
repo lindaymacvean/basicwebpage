@@ -21,10 +21,10 @@
   </head>
 
   <body>
-      <audio id="sound1" autostart="false" hidden="true" enablejavascript="true" allowscriptaccess="always">
+      <audio id="sound1" hidden="true" enablejavascript="true" allowscriptaccess="always">
           <source src="siren.mp3" type="audio/mpeg">
           Your browser does not support the audio tag.
-    </audio>
+      </audio>
     
     <div class="container">
         <h1>This is my new webpage</h1>
@@ -35,11 +35,10 @@
             This is a link to google
         </a>
     </div>
+    
+    <script>
+      alert('this is sound of the poooolice');
+      document.getElementById('sound1').play();
+    </script>
   </body>
-
-  <script>
-    alert('this is sound of the poooolice');
-    document.getElementById('sound1').play();
-  </script>
-
 </html>
